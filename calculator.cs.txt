@@ -1,0 +1,71 @@
+class calculator{
+	
+static void main(string[]args){
+	double a, b;
+    char pilihan;
+
+            Console.WriteLine("Pilihan Operasi");
+            Console.WriteLine("1.Penambahan");
+            Console.WriteLine("2.Pengurangan");
+            Console.WriteLine("3.Perkalian");
+            Console.WriteLine("4.Pembagian");
+            Console.WriteLine("Masukan Pilihan : ");
+            pilihan = Convert.ToChar(Console.ReadLine());
+
+            if (pilihan == '1') {
+                Console.WriteLine("Masukan Angka : ");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Masukan Angka : ");
+                b = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Hasil " + a + "+" + b + "= " + penambahan(a, b));
+
+            }
+            else if (pilihan == '2') {
+                Console.WriteLine("Masukan Angka : ");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Masukan Angka : ");
+                b = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Hasil " + a + "-" + b + "= " + pengurangan(a, b));
+
+            }
+            else if (pilihan == '3')
+            {
+                Console.WriteLine("Masukan Angka : ");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Masukan Angka : ");
+                b = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Hasil " + a + "*" + b + "= " + perkalian(a, b));
+
+            }
+            else if (pilihan == '4') {
+                Console.WriteLine("Masukan Angka : ");
+                a = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Masukan Angka : ");
+                b = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Hasil " + a + "/" + b + "= " + pembagian(a, b));
+
+            }
+            
+            Console.ReadLine();
+	
+ }
+	static double penambahan(double a, double b)
+        {
+            return a + b;
+        }
+    
+	static double pengurangan(double a, double b)
+        {
+            return a - b;
+        }
+ 
+	static double perkalian(double a, double b)
+        {
+            return a * b;
+        }
+ 
+	static double pembagian(double a, double b) 
+		{
+            return a / b;
+        }
+ } 
